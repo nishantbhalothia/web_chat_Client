@@ -1,25 +1,31 @@
-import React, { useEffect } from 'react'
-import Navbar from './Components/Navbar'
-import './Styles/App.css'
-import Home from './Pages/Home'
-import { ContactsProvider , useContextValue } from './context/contexts'
+import React, { useEffect } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // Import BrowserRouter and Switch
+import Navbar from './Components/Navbar';
+import './Styles/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home';
+import Login from './Pages/SignIn'; // Import Login component (assuming you have one)
+import Signup from './Pages/SignUp'; // Import Signup component (assuming you have one)
+import { ContactsProvider, useContextValue } from './context/contexts';
 
 const App = () => {
-
-  
-
   return (
     <div className='App'>
-      
       <ContactsProvider>
-        <Navbar />
-        <Home />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
+          </Routes>
+        </Router>
       </ContactsProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
 
 
