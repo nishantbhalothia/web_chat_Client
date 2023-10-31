@@ -1,0 +1,74 @@
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+  height: 8px; /* Set the height of the scrollbar */
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Style the track (the "background" of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Style the thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* On hover, the thumb will be a darker shade */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contacts,
+.chat-section,
+.stared-chat {
+  padding-top: 5em; /* Adjust the value as needed */
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
+
+.home-cont {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts {
+  /* border: 1px solid black; */
+  width: 30%;
+  overflow-y: auto;
+  background: top;
+}
+.chat-section {
+  /* border: 1px solid rgb(28, 156, 211); */
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F0F0;
+  background-image: url("../data/Photos/chat_background2.png");
+  background-size: contain;
+  background-position: center;
+}
+.stared-chat {
+  /* border: 1px solid rgb(28, 156, 211); */
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* ==========================     styling section for contacts list   =============================*/

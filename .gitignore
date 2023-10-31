@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Build artifacts
+build/
+dist/
+out/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Environment specific files
+.env*
+
+# Logs and backups
+*.log
+*.bak
+*.log.*
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# OS generated files
+.DS_Store
+Thumbs.db

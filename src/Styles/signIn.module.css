@@ -1,0 +1,44 @@
+/* signIn.module.css */
+
+.bgLight {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 5rem;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardHeader {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .cardBody {
+    padding: 2rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .btnPrimary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh;
+}
+
+button{
+  padding: .3em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Set the position to fixed */
+  top: 0; /* Stick it to the top */
+  width: 100%; /* Make it full width */
+  z-index: 1000; /* Set a high z-index to make sure it's on top of other elements */
+}
+

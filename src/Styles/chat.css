@@ -1,0 +1,39 @@
+
+
+.message-box-sent {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    clear: both;
+    float: right;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.message-box-received {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    clear: both;
+    float: left;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.user-chat-sent::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #4CAF50 transparent transparent;
+}
